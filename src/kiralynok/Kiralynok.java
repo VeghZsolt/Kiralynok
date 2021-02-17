@@ -26,12 +26,13 @@ public class Kiralynok {
     {
         feladat4();
         feladat6();
+        feladat9();
     }
 
     private void feladat4()
     {
         System.out.println("4. feladat: üres tábla:");
-        Tabla tabla = new Tabla('#');
+
         tabla.megjelenit();   
     }
 
@@ -40,6 +41,13 @@ public class Kiralynok {
         System.out.println("6. feladat feltoltott tabla:");
         tabla.elhelyez(8);
         tabla.megjelenit();
+    }
+
+    private void feladat9()
+    {
+        System.out.println("9. feladat üres sorok és oszlopok száma");
+        System.out.println("sorok szama: " +tabla.uresSorokSzama());
+        System.out.println("oszlopok szama: "+ tabla.uresOszlopokSzama());
     }
     
 }
